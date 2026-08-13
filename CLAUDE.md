@@ -13,9 +13,9 @@ repo.
 
 ## Status
 
-This repo is pre-scaffold as of 2026-08-12: PRD and CLAUDE.md exist, but no Astro project
-has been initialized yet. If asked to start building, scaffold a new Astro project in place
-(`npm create astro@latest .`) rather than assuming one already exists — check first.
+As of 2026-08-12: the Astro project is scaffolded (minimal template, TypeScript strict,
+`npm install` run) at repo root. `src/content/` collections (halacha/machshava/parsha) have
+not been created yet — that's the next step, per "Content structure & schema" below.
 
 ## Tech stack
 
@@ -92,11 +92,20 @@ deferred to v2).
 
 ## Commands
 
-(Fill in once the Astro project is scaffolded — expected to be roughly:)
-
-- `npm run dev` — local dev server.
+- `npm run dev` — local dev server. When starting it from Claude Code, prefer
+  `astro dev --background` so the shell isn't blocked; manage it with `astro dev stop`,
+  `astro dev status`, and `astro dev logs`.
 - `npm run build` — production build; **must pass** before pushing.
 - `npm run preview` — preview the production build locally.
+
+### Astro documentation
+
+Consult these before working on related tasks:
+
+- [Adding pages, dynamic routes, or middleware](https://docs.astro.build/en/guides/routing/)
+- [Working with Astro components](https://docs.astro.build/en/basics/astro-components/)
+- [Adding or managing content collections](https://docs.astro.build/en/guides/content-collections/)
+- [Adding styles](https://docs.astro.build/en/guides/styling/)
 
 ## Quality bar
 

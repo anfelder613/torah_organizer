@@ -1,0 +1,25 @@
+name: Link check
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/content/**/*.yaml"
+  schedule:
+    # Weekly, Sunday 06:00 UTC — catches link rot even when content isn't changing.
+    - cron: "0 6 * * 0"
+  workflow_dispatch:
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check resource links
+        uses: lycheeverse/lychee-action@v2
+        with:
+          args: >-
+            --no-progress
+            --accept 200,206,301,302,303,307,308,429
+            "src/content/**/*.yaml"
+          fail: true

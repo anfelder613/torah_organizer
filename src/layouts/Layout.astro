@@ -1,0 +1,137 @@
+---
+interface Props {
+  title: string;
+}
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title} · Torah Organizer</title>
+  </head>
+  <body>
+    <header>
+      <a class="brand" href={import.meta.env.BASE_URL}>Torah Organizer</a>
+      <nav>
+        <a href={`${import.meta.env.BASE_URL}halacha/`}>Halacha</a>
+        <a href={`${import.meta.env.BASE_URL}machshava/`}>Machshava</a>
+        <a href={`${import.meta.env.BASE_URL}parsha/`}>Parsha</a>
+      </nav>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer>
+      <p>Torah Organizer — a curated resource index.</p>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    color-scheme: light dark;
+    --fg: #1a1a1a;
+    --bg: #ffffff;
+    --muted: #666666;
+    --border: #e0e0e0;
+    --accent: #2b4c7e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --fg: #e8e8e8;
+      --bg: #14161a;
+      --muted: #9a9a9a;
+      --border: #2e3238;
+      --accent: #7fa6e0;
+    }
+  }
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    color: var(--fg);
+    background: var(--bg);
+    line-height: 1.5;
+  }
+  a {
+    color: var(--accent);
+  }
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+  header .brand {
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--fg);
+    font-size: 1.1rem;
+  }
+  header nav a {
+    margin-left: 1.25rem;
+    text-decoration: none;
+    color: var(--fg);
+  }
+  header nav a:hover {
+    color: var(--accent);
+  }
+  main {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+  }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+    padding: 2rem 1.5rem;
+  }
+  ul.topic-list,
+  ul.resource-list {
+    list-style: none;
+    padding: 0;
+  }
+  ul.topic-list li,
+  ul.resource-list li {
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.9rem 1rem;
+    margin-bottom: 0.75rem;
+  }
+  ul.topic-list a {
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .resource-title {
+    font-weight: 600;
+  }
+  .resource-meta {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-top: 0.15rem;
+  }
+  .resource-desc {
+    margin-top: 0.35rem;
+  }
+  .empty-state {
+    color: var(--muted);
+    font-style: italic;
+  }
+  .badge {
+    display: inline-block;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    padding: 0.1rem 0.6rem;
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+</style>

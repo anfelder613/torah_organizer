@@ -1,0 +1,39 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const sections = [
+  {
+    slug: "halacha",
+    title: "Halacha",
+    description: "Jewish law, organized by topic.",
+  },
+  {
+    slug: "machshava",
+    title: "Machshava",
+    description: "Jewish thought, organized by theme.",
+  },
+  {
+    slug: "parsha",
+    title: "Parsha",
+    description: "Resources organized by the weekly Torah portion.",
+  },
+];
+---
+
+<Layout title="Home">
+  <h1>Torah Organizer</h1>
+  <p>
+    A curated index of articles, shiurim, seforim, and WhatsApp groups —
+    organized by topic across Halacha, Machshava, and Parsha.
+  </p>
+  <ul class="topic-list">
+    {
+      sections.map((s) => (
+        <li>
+          <a href={`${import.meta.env.BASE_URL}${s.slug}/`}>{s.title}</a>
+          <div class="resource-meta">{s.description}</div>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>
