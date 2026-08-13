@@ -13,9 +13,13 @@ repo.
 
 ## Status
 
-As of 2026-08-12: the Astro project is scaffolded (minimal template, TypeScript strict,
-`npm install` run) at repo root. `src/content/` collections (halacha/machshava/parsha) have
-not been created yet — that's the next step, per "Content structure & schema" below.
+As of 2026-08-12: fully scaffolded and deployed. `src/content/` collections exist for all
+three sections (all 54 parshiyot pre-populated with empty resource lists; one example topic
+each in Halacha and Machshava). Pages/routes, layout, and CI (build+deploy, link-check) are
+in place. Repo is public at github.com/anfelder613/torah_organizer, live at
+https://anfelder613.github.io/torah_organizer/. The main remaining work is content: adding
+real resources to topic files (see "Adding content" below) — the software itself is done
+for v1 per the PRD.
 
 ## Tech stack
 
