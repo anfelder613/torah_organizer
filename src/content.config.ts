@@ -37,4 +37,29 @@ const parsha = defineCollection({
   schema: topicSchema,
 });
 
-export const collections = { halacha, machshava, parsha };
+// Gemara: one file per perek (chapter) of a masechta. Each perek lists its dapim
+// (amudim), each carrying a Sefaria text link and one shiur link — unlike the
+// generic topicSchema above, every daf always has exactly these two resources.
+const dafSchema = z.object({
+  daf: z.string(), // e.g. "2a"
+  sefariaUrl: z.string().url(),
+  shiur: z.object({
+    title: z.string(),
+    url: z.string().url(),
+    author: z.string().optional(),
+  }),
+});
+
+const perekSchema = z.object({
+  masechta: z.string(), // e.g. "Berachot"
+  title: z.string(), // e.g. "Perek 1: Me'eimatai"
+  order: z.number(), // chapter number within the masechta
+  dapim: z.array(dafSchema),
+});
+
+const gemara = defineCollection({
+  loader: glob({ pattern: "**/*.yaml", base: "./src/content/gemara" }),
+  schema: perekSchema,
+});
+
+export const collections = { halacha, machshava, parsha, gemara };

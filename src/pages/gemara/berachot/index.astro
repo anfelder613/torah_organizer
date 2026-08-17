@@ -1,0 +1,62 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../../layouts/Layout.astro";
+
+const perakim = (await getCollection("gemara"))
+  .filter((entry) => entry.data.masechta === "Berachot")
+  .sort((a, b) => a.data.order - b.data.order);
+
+const totalDapim = perakim.reduce((sum, p) => sum + p.data.dapim.length, 0);
+---
+
+<Layout title="Berachot">
+  <p>
+    <a href={import.meta.env.BASE_URL}>Home</a> /
+    <a href={`${import.meta.env.BASE_URL}gemara/`}>Gemara</a>
+  </p>
+  <h1>Masechet Berachot</h1>
+  <p>{totalDapim} dapim across {perakim.length} perakim. Each daf links to its text on Sefaria and one Daf Yomi shiur.</p>
+
+  {
+    perakim.map((perek) => (
+      <section>
+        <h2>{perek.data.title}</h2>
+        <ul class="daf-grid">
+          {perek.data.dapim.map((d) => (
+            <li>
+              <span class="daf-label">{d.daf}</span>
+              <a href={d.sefariaUrl} target="_blank" rel="noopener noreferrer">Text (Sefaria)</a>
+              <a href={d.shiur.url} target="_blank" rel="noopener noreferrer">Shiur</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Layout>
+
+<style>
+  section {
+    margin-bottom: 2rem;
+  }
+  ul.daf-grid {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 0.5rem;
+  }
+  ul.daf-grid li {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.5rem 0.7rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+  }
+  .daf-label {
+    font-weight: 600;
+    min-width: 2.5rem;
+  }
+</style>

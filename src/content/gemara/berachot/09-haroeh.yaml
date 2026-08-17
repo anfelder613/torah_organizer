@@ -1,0 +1,109 @@
+masechta: "Berachot"
+title: "Perek 9: HaRoeh"
+order: 9
+dapim:
+  - daf: "54a"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.54a"
+    shiur:
+      title: "Daf Yomi: Berachot 54a"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/54/a/"
+  - daf: "54b"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.54b"
+    shiur:
+      title: "Daf Yomi: Berachot 54b"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/54/b/"
+  - daf: "55a"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.55a"
+    shiur:
+      title: "Daf Yomi: Berachot 55a"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/55/a/"
+  - daf: "55b"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.55b"
+    shiur:
+      title: "Daf Yomi: Berachot 55b"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/55/b/"
+  - daf: "56a"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.56a"
+    shiur:
+      title: "Daf Yomi: Berachot 56a"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/56/a/"
+  - daf: "56b"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.56b"
+    shiur:
+      title: "Daf Yomi: Berachot 56b"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/56/b/"
+  - daf: "57a"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.57a"
+    shiur:
+      title: "Daf Yomi: Berachot 57a"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/57/a/"
+  - daf: "57b"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.57b"
+    shiur:
+      title: "Daf Yomi: Berachot 57b"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/57/b/"
+  - daf: "58a"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.58a"
+    shiur:
+      title: "Daf Yomi: Berachot 58a"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/58/a/"
+  - daf: "58b"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.58b"
+    shiur:
+      title: "Daf Yomi: Berachot 58b"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/58/b/"
+  - daf: "59a"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.59a"
+    shiur:
+      title: "Daf Yomi: Berachot 59a"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/59/a/"
+  - daf: "59b"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.59b"
+    shiur:
+      title: "Daf Yomi: Berachot 59b"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/59/b/"
+  - daf: "60a"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.60a"
+    shiur:
+      title: "Daf Yomi: Berachot 60a"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/60/a/"
+  - daf: "60b"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.60b"
+    shiur:
+      title: "Daf Yomi: Berachot 60b"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/60/b/"
+  - daf: "61a"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.61a"
+    shiur:
+      title: "Daf Yomi: Berachot 61a"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/61/a/"
+  - daf: "61b"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.61b"
+    shiur:
+      title: "Daf Yomi: Berachot 61b"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/61/b/"
+  - daf: "62a"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.62a"
+    shiur:
+      title: "Daf Yomi: Berachot 62a"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/62/a/"
+  - daf: "62b"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.62b"
+    shiur:
+      title: "Daf Yomi: Berachot 62b"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/62/b/"
+  - daf: "63a"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.63a"
+    shiur:
+      title: "Daf Yomi: Berachot 63a"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/63/a/"
+  - daf: "63b"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.63b"
+    shiur:
+      title: "Daf Yomi: Berachot 63b"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/63/b/"
+  - daf: "64a"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.64a"
+    shiur:
+      title: "Daf Yomi: Berachot 64a"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/64/a/"

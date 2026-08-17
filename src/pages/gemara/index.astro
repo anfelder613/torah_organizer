@@ -1,0 +1,22 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+// Currently just Berachot; add more masechtot here as they're populated.
+const masechtot = [{ slug: "berachot", title: "Berachot", description: "Blessings — the first tractate of Seder Zeraim." }];
+---
+
+<Layout title="Gemara">
+  <p><a href={import.meta.env.BASE_URL}>&larr; Home</a></p>
+  <h1>Gemara</h1>
+  <p>Browse by masechta (tractate), then by daf — each daf links to its text on Sefaria and one shiur.</p>
+  <ul class="topic-list">
+    {
+      masechtot.map((m) => (
+        <li>
+          <a href={`${import.meta.env.BASE_URL}gemara/${m.slug}/`}>{m.title}</a>
+          <div class="resource-meta">{m.description}</div>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>

@@ -1,0 +1,44 @@
+masechta: "Berachot"
+title: "Perek 5: Ein Omdin"
+order: 5
+dapim:
+  - daf: "31a"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.31a"
+    shiur:
+      title: "Daf Yomi: Berachot 31a"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/31/a/"
+  - daf: "31b"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.31b"
+    shiur:
+      title: "Daf Yomi: Berachot 31b"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/31/b/"
+  - daf: "32a"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.32a"
+    shiur:
+      title: "Daf Yomi: Berachot 32a"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/32/a/"
+  - daf: "32b"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.32b"
+    shiur:
+      title: "Daf Yomi: Berachot 32b"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/32/b/"
+  - daf: "33a"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.33a"
+    shiur:
+      title: "Daf Yomi: Berachot 33a"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/33/a/"
+  - daf: "33b"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.33b"
+    shiur:
+      title: "Daf Yomi: Berachot 33b"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/33/b/"
+  - daf: "34a"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.34a"
+    shiur:
+      title: "Daf Yomi: Berachot 34a"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/34/a/"
+  - daf: "34b"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.34b"
+    shiur:
+      title: "Daf Yomi: Berachot 34b"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/34/b/"
