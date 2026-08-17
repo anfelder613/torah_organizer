@@ -4,3 +4,10 @@ resources:
   - title: "What is Simcha?"
     url: "https://www.yutorah.org/lectures/974089/What-is-Simcha"
     type: shiur
+  - title: "The Pursuit of Joy - Rabbi Sacks on Parsha"
+    url: "https://outorah.org/p/26367/"
+    type: shiur
+    author: "Rabbi Jonathan Sacks"
+  - title: "Simcha in Halacha - Something Different"
+    url: "https://outorah.org/p/117993/"
+    type: shiur

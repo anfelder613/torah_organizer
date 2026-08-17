@@ -1,7 +1,12 @@
 title: "Vayera"
 order: 4
 resources:
-  - title: "Vayeira 5770: Lessons of Laughter"
+  - title: "Vayeira 5770: Lessons of Laughter - Shira Smiles on Parsha"
     url: "https://outorah.org/p/1075/"
     type: shiur
-    author: "Shira Smiles"
+  - title: "Dogma or Desire? - Shira Smiles on Parsha"
+    url: "https://outorah.org/p/53752/"
+    type: shiur
+  - title: "Vayeira 5768: Connection - Shira Smiles on Parsha"
+    url: "https://outorah.org/p/20675/"
+    type: shiur

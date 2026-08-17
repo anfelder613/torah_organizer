@@ -5,3 +5,10 @@ resources:
     url: "https://www.yutorah.org/lectures/732788/"
     type: shiur
     format: audio
+  - title: "The Beauty of Taharat Hamishpacha - Machshava from OU"
+    url: "https://outorah.org/p/135644"
+    type: shiur
+  - title: "Review of the Halachot of Taharat Hamishpacha Part 4"
+    url: "https://torahanytime.com/lectures/25777"
+    type: shiur
+    format: video

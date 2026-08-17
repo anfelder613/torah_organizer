@@ -4,3 +4,11 @@ resources:
   - title: "Rosh Hashanah Machzor Shiur"
     url: "https://www.yutorah.org/lectures/719724"
     type: shiur
+  - title: "Rosh Hashanah - Understanding The Machzor Part 1"
+    url: "https://torahdownloads.com/shiur-1009265.html"
+    type: shiur
+    author: "Rabbi Ahron Lopiansky"
+  - title: "Nusach for Rosh Hashanah"
+    url: "https://torahdownloads.com/shiur-1003917.html"
+    type: shiur
+    author: "Rabbi Haskel Lookstein"

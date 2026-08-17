@@ -1,7 +1,12 @@
 title: "Masei"
 order: 43
 resources:
-  - title: "Parshat Masei: The Grand Scheme (5769)"
-    url: "https://outorah.org/p/14979"
+  - title: "Parshat Masei: The Grand Scheme (5769) - Shira Smiles on Parsha"
+    url: "https://www.outorah.org/p/14979"
     type: shiur
-    author: "Shira Smiles"
+  - title: "Exiting Egypt - Shira Smiles on Parsha"
+    url: "https://www.outorah.org/p/230563"
+    type: shiur
+  - title: "Parshat Matot-Masei 5772 - Rabbi Taub on Parsha"
+    url: "https://www.outorah.org/p/3164"
+    type: shiur

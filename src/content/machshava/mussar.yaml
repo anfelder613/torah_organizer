@@ -5,3 +5,11 @@ resources:
     url: "https://yutorah.org/series/Ten-Minute-Mussar"
     type: shiur
     description: "Series of short mussar shiurim."
+  - title: "Shiur Mussar And Chizuk"
+    url: "https://torahdownloads.com/shiur-17217.html"
+    type: shiur
+    author: "Rabbi Shimshon Dovid Pincus"
+  - title: "Mussar Movement - Nevardok, Kelm, Slobodka 5775"
+    url: "https://torahdownloads.com/shiur-1024839.html"
+    type: shiur
+    author: "Rabbi Yitzchak Breitowitz"

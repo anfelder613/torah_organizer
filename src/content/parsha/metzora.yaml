@@ -1,7 +1,12 @@
 title: "Metzora"
 order: 28
 resources:
-  - title: "Metzora 5769: The Treasure Within"
-    url: "https://outorah.org/p/20730"
+  - title: "Metzora 5769: The Treasure Within - Shira Smiles on Parsha"
+    url: "https://www.outorah.org/p/20730"
     type: shiur
-    author: "Shira Smiles"
+  - title: "Parshas Tazria-Metzora - Chizkuni"
+    url: "https://outorah.org/p/191490"
+    type: shiur
+  - title: "Bird's Beckoning - Shira Smiles on Parsha"
+    url: "https://outorah.org/p/223535/"
+    type: shiur

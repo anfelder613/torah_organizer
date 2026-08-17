@@ -7,3 +7,11 @@ resources:
     author: "Rabbi Yitzchak Breitowitz"
     format: audio
     description: "From a series on the Rambam's Shemoneh Perakim, which includes his classic treatment of free will."
+  - title: "Pinchas 5769 Hechrech and Bechira begin AFTER a choice"
+    url: "https://torahdownloads.com/shiur-1016664.html"
+    type: shiur
+    author: "Rabbi Menashe Goldberger"
+  - title: "Ikkarei Emunah"
+    url: "https://www.yutorah.org/categories/Machshava/Jewish-Thought/Ikkarei-Emunah"
+    type: shiur
+    description: "YUTorah's Fundamentals of Faith category, including shiurim on free will."

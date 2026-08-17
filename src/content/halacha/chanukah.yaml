@@ -5,3 +5,11 @@ resources:
     url: "https://torahdownloads.com/c-461-hilchos-chanukah.html"
     type: shiur
     description: "Collection of shiurim on Hilchot Chanukah."
+  - title: "Special Chanukah Content"
+    url: "https://outorah.org/series/6172/"
+    type: shiur
+    description: "Collection of Chanukah shiurim on OU Torah."
+  - title: "Yahrtzeit Shiur: Inyanei Chanukah - הלל and חשד"
+    url: "https://outorah.org/p/22780/"
+    type: shiur
+    author: "Rabbi Menachem Genack"

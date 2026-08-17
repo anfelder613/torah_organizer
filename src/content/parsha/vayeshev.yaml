@@ -1,7 +1,12 @@
 title: "Vayeshev"
 order: 9
 resources:
-  - title: "Image of Inspiration"
+  - title: "Image of Inspiration - Shira Smiles on Parsha"
     url: "https://outorah.org/p/32775/"
     type: shiur
-    author: "Shira Smiles"
+  - title: "Moshiach Momentum - Shira Smiles on Parsha"
+    url: "https://outorah.org/p/79727/"
+    type: shiur
+  - title: "Reuven's Return - Shira Smiles on Parsha"
+    url: "https://outorah.org/p/30669/"
+    type: shiur

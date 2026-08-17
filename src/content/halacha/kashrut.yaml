@@ -5,3 +5,9 @@ resources:
     url: "https://www.yutorah.org/lectures/869480/"
     type: shiur
     format: audio
+  - title: "The Kashrut Status of Inedible Non-Kosher Food Items Part I"
+    url: "https://www.yutorah.org/lectures/742972"
+    type: shiur
+  - title: "Kashrus of Soaps and Toiletries"
+    url: "https://www.yutorah.org/lectures/727121"
+    type: shiur

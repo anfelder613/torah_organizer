@@ -1,7 +1,12 @@
 title: "Emor"
 order: 31
 resources:
-  - title: "Parshat Emor: Sefirat Ho'omer"
+  - title: "Parshat Emor: Sefirat Ho'omer - Rabbi Fox on Parsha"
     url: "https://outorah.org/p/248/"
     type: shiur
-    author: "Rabbi Fox"
+  - title: "Infusion and Input - Shira Smiles on Parsha"
+    url: "https://www.outorah.org/p/193455"
+    type: shiur
+  - title: "Bountiful Breads - Shira Smiles on Parsha"
+    url: "https://www.outorah.org/p/68978"
+    type: shiur

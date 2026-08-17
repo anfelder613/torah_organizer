@@ -6,3 +6,11 @@ resources:
     type: shiur
     format: video
     description: "Collection of shiurim on the laws and practice of tefillah."
+  - title: "Tefillah (32) Prayer - The Poor Man's Weapon"
+    url: "https://torahdownloads.com/shiur-1006507.html"
+    type: shiur
+    author: "Rabbi Moshe Weinberger"
+  - title: "Tefillah"
+    url: "https://www.yutorah.org/categories/Halacha/Jewish-Law/Tefillah"
+    type: shiur
+    description: "YUTorah's Halacha/Tefillah category — browse all shiurim on this topic."

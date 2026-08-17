@@ -1,7 +1,12 @@
 title: "Bechukotai"
 order: 33
 resources:
-  - title: "Fruit Fruition"
+  - title: "Fruit Fruition - Shira Smiles on Parsha"
     url: "https://outorah.org/p/194722"
     type: shiur
-    author: "Shira Smiles"
+  - title: "Judicious Journeys - Shira Smiles on Parsha"
+    url: "https://www.outorah.org/p/69342"
+    type: shiur
+  - title: "Haftorahman - Parshat Bechukotai"
+    url: "https://outorah.org/p/1592/"
+    type: shiur
