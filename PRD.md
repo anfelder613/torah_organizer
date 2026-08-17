@@ -3,10 +3,11 @@
 ## 1. Summary
 
 Torah Organizer is a public-readable, single-curator website that lets a rabbi or Torah
-scholar (the site owner) browse curated resources across three domains of Torah study —
-**Halacha** (Jewish law), **Machshava** (Jewish thought/philosophy), and **Parsha** (weekly
-Torah portion) — and find links to articles, online shiurim, seforim purchase links,
-WhatsApp group/broadcast links, and other helpful resources, organized by topic.
+scholar (the site owner) browse curated resources across four domains of Torah study —
+**Halacha** (Jewish law), **Machshava** (Jewish thought/philosophy), **Gemara** (Talmud, by
+masechta and daf), and **Parsha** (weekly Torah portion) — and find links to articles,
+online shiurim, seforim purchase links, WhatsApp group/broadcast links, and other helpful
+resources, organized by topic.
 
 ## 2. Problem
 
@@ -46,17 +47,26 @@ personal system for curating and browsing this by topic.
 
 ## 6. Information architecture
 
-Three top-level sections, each with its own topic structure:
+Four top-level sections, each with its own topic structure:
 
 - **Halacha** — organized by topic area (e.g., Shabbat, Kashrut, Tefillah, Nidah, etc.).
-  Topics are added as the curator defines them; no fixed list.
+  Topics are added as the curator defines them; no fixed list. Each topic carries multiple
+  (currently 3) curated resource links.
 - **Machshava** — organized by theme (e.g., Free Will, Prayer, Suffering, Emunah). Topics
-  are added as the curator defines them; no fixed list.
+  are added as the curator defines them; no fixed list. Same multi-resource structure as
+  Halacha.
+- **Gemara** — organized by masechta (tractate), then perek (chapter), then daf (page).
+  Unlike the other sections, each daf has a fixed pair of resources rather than an
+  open-ended list: a link to the text on Sefaria, and one Daf Yomi shiur link. Masechtot are
+  added one at a time as the curator populates them (Berachot is the first, fully
+  populated: all 125 amudim across its 9 perakim).
 - **Parsha** — organized by the 54 fixed weekly Torah portions (Bereishit → Vezot
   Haberacha). This list is pre-scaffolded in full at launch, even before resources exist
-  for every parsha, since the list is fixed and known in advance.
+  for every parsha, since the list is fixed and known in advance. Same multi-resource
+  structure as Halacha/Machshava.
 
-Navigation: Section → Topic → list of resources. No cross-section search or tagging in v1.
+Navigation: Section → Topic → list of resources (Gemara: Section → Masechta → daf grid). No
+cross-section search or tagging in v1.
 
 ## 7. Content model
 
@@ -80,6 +90,19 @@ Each **resource** has:
 | `description` | string (short, 1–2 sentences)                                       | no       | Free-text summary                        |
 
 No tags field in v1 (explicit non-goal — revisit only if browsing becomes unwieldy).
+
+### Gemara content model (distinct from the above)
+
+Gemara content is structured differently, since it's inherently enumerable (a masechta has
+a fixed, known set of dapim) rather than open-ended like the other three sections. Each
+**perek** (chapter) file has:
+
+- `masechta` (string, e.g. "Berachot")
+- `title` (string, e.g. "Perek 1: Me'eimatai")
+- `order` (number — chapter order within the masechta)
+- a list of **dapim**, each with: `daf` (e.g. "2a"), `sefariaUrl`, and a single `shiur`
+  object (`title`, `url`, optional `author`) — always exactly one text link + one shiur
+  link per daf, not an open-ended resource list.
 
 ## 8. Content storage & editing workflow
 

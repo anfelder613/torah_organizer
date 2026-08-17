@@ -7,19 +7,20 @@ full product spec — this file is about *how to build and maintain it*, not *wh
 
 A static, public-readable website (Astro, deployed to GitHub Pages) that lets a single
 curator browse and record Torah-study resources — links to articles, shiurim, seforim
-purchases, and WhatsApp groups — across three sections: Halacha, Machshava, and Parsha.
-No backend, no database, no accounts. Content lives in YAML files edited directly in the
-repo.
+purchases, and WhatsApp groups — across four sections: Halacha, Machshava, Gemara, and
+Parsha. No backend, no database, no accounts. Content lives in YAML files edited directly
+in the repo.
 
 ## Status
 
-As of 2026-08-12: fully scaffolded and deployed. `src/content/` collections exist for all
-three sections (all 54 parshiyot pre-populated with empty resource lists; one example topic
-each in Halacha and Machshava). Pages/routes, layout, and CI (build+deploy, link-check) are
-in place. Repo is public at github.com/anfelder613/torah_organizer, live at
-https://anfelder613.github.io/torah_organizer/. The main remaining work is content: adding
-real resources to topic files (see "Adding content" below) — the software itself is done
-for v1 per the PRD.
+As of 2026-08-17: fully scaffolded, deployed, and populated. `src/content/` collections
+exist for all four sections. Halacha (25 topics), Machshava (25 topics), and all 54
+parshiyot each carry 3 real resource links. Gemara has Masechet Berachot fully populated
+(125 dapim across its 9 perakim, each with a Sefaria text link + one Daf Yomi shiur link).
+Pages/routes, layout, and CI (build+deploy, link-check) are in place. Repo is public at
+github.com/anfelder613/torah_organizer, live at https://anfelder613.github.io/torah_organizer/.
+Ongoing work is content: adding more masechtot to Gemara, more topics to Halacha/Machshava,
+and more resources per topic as the curator finds them.
 
 ## Tech stack
 
@@ -77,6 +78,52 @@ each starting with an empty `resources: []` list. Don't invent or guess parsha n
 verify against a standard list (e.g., the standard Sephardi/Ashkenazi annual triennial
 cycle order) before generating all 54 files.
 
+### Gemara collection (distinct schema)
+
+Gemara doesn't use `topicSchema` — it's structured `masechta -> perek -> daf`, since a
+masechta's daf count is fixed and known (unlike open-ended Halacha/Machshava topics). Layout:
+
+```
+src/content/gemara/
+  <masechta-slug>/
+    01-<perek-slug>.yaml
+    02-<perek-slug>.yaml
+    ...
+```
+
+Each perek file:
+
+```yaml
+masechta: "Berachot"
+title: "Perek 1: Me'eimatai"
+order: 1
+dapim:
+  - daf: "2a"
+    sefariaUrl: "https://www.sefaria.org/Berakhot.2a"
+    shiur:
+      title: "Daf Yomi: Berachot 2a"
+      url: "https://www.yutorah.org/daf.cfm/6004/berachot/2/a/"
+```
+
+Every daf gets exactly one Sefaria link and one shiur link — not an open-ended resource
+list. Both URL patterns are predictable and were verified once per masechta rather than
+searched per-daf:
+- Sefaria: `https://www.sefaria.org/<MasechtaName>.<daf><a|b>` (note Sefaria spells it
+  "Berakhot", not "Berachot" — check the exact spelling per masechta before generating).
+- YUTorah "On the Daf": `https://www.yutorah.org/daf.cfm/<masechta-id>/<masechta>/<N>/<a|b>/`
+  — the numeric masechta ID (6004 for Berachot) must be found via search per masechta; it's
+  not derivable from the masechta name.
+
+When chapter boundaries fall mid-daf (very common in Mishnah/Gemara), assign each daf to
+exactly one perek (the chapter it's first associated with) — don't duplicate a daf across
+two perek files.
+
+Add a new masechta by: creating a new subfolder, verifying its Sefaria name and YUTorah
+masechta ID, generating its perek files (a script, not one Write call per daf — see how
+Berachot was generated), and adding it to the `masechtot` array in
+`src/pages/gemara/index.astro` plus a new `src/pages/gemara/<masechta>/index.astro` page
+(copy `berachot/index.astro` and change the collection filter).
+
 ## Adding content (the main day-to-day workflow)
 
 Adding a resource means editing a YAML file directly, e.g.:
@@ -93,6 +140,33 @@ titles first to avoid near-duplicates (e.g., don't create both `shabbat` and
 
 There is no admin UI or CMS in v1 — do not build one unless explicitly asked (see PRD §14,
 deferred to v2).
+
+### Finding real resource links
+
+Never fabricate a URL. Use WebSearch restricted to the approved sites (YUTorah,
+TorahAnytime, KolHalashon, OUTorah, AllDaf, TorahDownloads, TorahApp — `allowed_domains` on
+the search call) and pick a real result with a clear, on-topic title.
+
+**Prefer these URL shapes**, in order of demonstrated reliability:
+- `outorah.org/p/<id>/` and `torahdownloads.com/shiur-<id>.html` — most reliable so far,
+  none have gone stale.
+- `yutorah.org/lectures/<id>/` (or `<id>/Title-Slug`) — reliable.
+- `yutorah.org/categories/...` or `torahanytime.com/topics/<id>` — topic/category
+  aggregator pages, reliable and often a better fit than one arbitrary lecture anyway.
+- **Avoid** `yutorah.org/lectures/lecture.cfm/<id>/...` — this older URL format has been
+  confirmed dead (user-reported "unable to locate the shiur requested") on multiple
+  otherwise-real links found via search. If a search result only offers this format, prefer
+  a different domain over using it.
+
+I can't reliably verify these links myself: YUTorah blocks bot/datacenter requests with a
+403 regardless of User-Agent (confirmed via curl and WebFetch), and OU Torah's article body
+loads via client-side JS that my fetch tools don't execute (so a page can look "empty" and
+still be a real, working page for an actual browser — check the page *title* matches what's
+expected before assuming it's broken). The CI link-checker (see Quality bar) is configured
+to accept 403 as "likely bot-blocked, not dead" — so a genuinely broken link (404) will
+still fail CI, but a YUTorah link passing CI is not itself proof it works. When in doubt,
+ask the user to click it in a real browser and report back — that's the only reliable check
+available.
 
 ## Commands
 
