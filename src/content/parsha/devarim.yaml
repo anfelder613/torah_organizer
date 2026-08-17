@@ -1,3 +1,7 @@
 title: "Devarim"
 order: 44
-resources: []
+resources:
+  - title: "Devarim: The First Speech"
+    url: "https://outorah.org/p/37706/"
+    type: shiur
+    author: "Rabbi Menachem Leibtag"

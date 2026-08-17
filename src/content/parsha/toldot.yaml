@@ -1,3 +1,7 @@
 title: "Toldot"
 order: 6
-resources: []
+resources:
+  - title: "Toldot: The Chosen Son"
+    url: "https://outorah.org/p/37175/"
+    type: shiur
+    author: "Rabbi Menachem Leibtag"

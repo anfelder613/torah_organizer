@@ -1,3 +1,7 @@
 title: "Vaera"
 order: 14
-resources: []
+resources:
+  - title: "Vaera: Hopeless"
+    url: "https://outorah.org/p/23013/"
+    type: shiur
+    author: "Rabbi Weinreb"

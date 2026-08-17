@@ -1,3 +1,7 @@
 title: "Vayeshev"
 order: 9
-resources: []
+resources:
+  - title: "Image of Inspiration"
+    url: "https://outorah.org/p/32775/"
+    type: shiur
+    author: "Shira Smiles"

@@ -1,3 +1,7 @@
 title: "Matot"
 order: 42
-resources: []
+resources:
+  - title: "The Laws of Parshat Matot"
+    url: "https://outorah.org/p/37691/"
+    type: shiur
+    author: "Rabbi Menachem Leibtag"

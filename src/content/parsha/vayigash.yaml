@@ -1,3 +1,7 @@
 title: "Vayigash"
 order: 11
-resources: []
+resources:
+  - title: "Parshas Vayigash"
+    url: "https://outorah.org/p/22755/"
+    type: shiur
+    author: "Rabbi Y. Dov Krakowski"

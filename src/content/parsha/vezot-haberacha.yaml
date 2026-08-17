@@ -1,3 +1,7 @@
 title: "Vezot Haberacha"
 order: 54
-resources: []
+resources:
+  - title: "VeZot HaBracha: The Order of Moshe's Blessings"
+    url: "https://outorah.org/p/37748/"
+    type: shiur
+    author: "Rabbi Menachem Leibtag"

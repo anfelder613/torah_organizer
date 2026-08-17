@@ -1,3 +1,6 @@
 title: "Yitro"
 order: 17
-resources: []
+resources:
+  - title: "Parshat Yitro: Desiring the Desired"
+    url: "https://www.yutorah.org/lectures/731509"
+    type: shiur

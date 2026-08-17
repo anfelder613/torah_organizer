@@ -1,3 +1,7 @@
 title: "Shemot"
 order: 13
-resources: []
+resources:
+  - title: "Introduction to Sefer Shemot"
+    url: "https://outorah.org/p/37316/"
+    type: shiur
+    author: "Rabbi Menachem Leibtag"

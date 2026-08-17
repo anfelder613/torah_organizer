@@ -1,3 +1,7 @@
 title: "Noach"
 order: 2
-resources: []
+resources:
+  - title: "Noach: Sifrei Toladot - The Backbone of Sefer Breishit"
+    url: "https://outorah.org/p/37142/"
+    type: shiur
+    author: "Rabbi Menachem Leibtag"

@@ -1,3 +1,7 @@
 title: "Vayikra"
 order: 24
-resources: []
+resources:
+  - title: "Introduction to Sefer Vayikra"
+    url: "https://outorah.org/p/37479/"
+    type: shiur
+    author: "Rabbi Menachem Leibtag"

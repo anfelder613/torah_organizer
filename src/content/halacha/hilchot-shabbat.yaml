@@ -1,9 +1,7 @@
 title: "Hilchot Shabbat"
 description: "Laws of Shabbat observance."
 resources:
-  # Example entry — replace or delete once you're adding real resources.
-  - title: "Example: OU Shabbat Resource Center"
-    url: "https://www.ou.org/holidays/shabbat/"
-    type: article
-    language: english
-    description: "Example placeholder resource — replace with real curated links."
+  - title: "Hilchos Shabbos Shiur #50 (YCQ)"
+    url: "https://www.yutorah.org/lectures/1032887/"
+    type: shiur
+    format: audio

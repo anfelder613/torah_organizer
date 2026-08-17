@@ -1,3 +1,7 @@
 title: "Ha'azinu"
 order: 53
-resources: []
+resources:
+  - title: "The Purpose of Shirat Haazinu"
+    url: "https://outorah.org/p/37741/"
+    type: shiur
+    author: "Rabbi Menachem Leibtag"

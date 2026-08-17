@@ -1,3 +1,7 @@
 title: "Bamidbar"
 order: 34
-resources: []
+resources:
+  - title: "Introduction to Sefer Bamidbar"
+    url: "https://outorah.org/p/37624/"
+    type: shiur
+    author: "Rabbi Menachem Leibtag"
