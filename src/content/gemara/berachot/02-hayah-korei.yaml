@@ -1,49 +1,26 @@
 masechta: "Berachot"
 title: "Perek 2: Hayah Korei"
 order: 2
+shiur:
+  title: "Meseches Brachos - Perek 02"
+  url: "https://torahdownloads.com/shiur-23738.html"
+  author: "R' Avrohom Kosman"
 dapim:
   - daf: "13b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.13b"
-    shiur:
-      title: "Daf Yomi: Berachot 13b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/13/b/"
   - daf: "14a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.14a"
-    shiur:
-      title: "Daf Yomi: Berachot 14a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/14/a/"
   - daf: "14b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.14b"
-    shiur:
-      title: "Daf Yomi: Berachot 14b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/14/b/"
   - daf: "15a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.15a"
-    shiur:
-      title: "Daf Yomi: Berachot 15a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/15/a/"
   - daf: "15b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.15b"
-    shiur:
-      title: "Daf Yomi: Berachot 15b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/15/b/"
   - daf: "16a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.16a"
-    shiur:
-      title: "Daf Yomi: Berachot 16a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/16/a/"
   - daf: "16b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.16b"
-    shiur:
-      title: "Daf Yomi: Berachot 16b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/16/b/"
   - daf: "17a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.17a"
-    shiur:
-      title: "Daf Yomi: Berachot 17a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/17/a/"
   - daf: "17b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.17b"
-    shiur:
-      title: "Daf Yomi: Berachot 17b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/17/b/"

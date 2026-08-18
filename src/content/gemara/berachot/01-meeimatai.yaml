@@ -1,119 +1,54 @@
 masechta: "Berachot"
 title: "Perek 1: Me'eimatai"
 order: 1
+shiur:
+  title: "Meseches Brachos - Perek 01"
+  url: "https://torahdownloads.com/shiur-23737.html"
+  author: "R' Avrohom Kosman"
 dapim:
   - daf: "2a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.2a"
-    shiur:
-      title: "Daf Yomi: Berachot 2a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/2/a/"
   - daf: "2b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.2b"
-    shiur:
-      title: "Daf Yomi: Berachot 2b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/2/b/"
   - daf: "3a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.3a"
-    shiur:
-      title: "Daf Yomi: Berachot 3a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/3/a/"
   - daf: "3b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.3b"
-    shiur:
-      title: "Daf Yomi: Berachot 3b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/3/b/"
   - daf: "4a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.4a"
-    shiur:
-      title: "Daf Yomi: Berachot 4a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/4/a/"
   - daf: "4b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.4b"
-    shiur:
-      title: "Daf Yomi: Berachot 4b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/4/b/"
   - daf: "5a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.5a"
-    shiur:
-      title: "Daf Yomi: Berachot 5a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/5/a/"
   - daf: "5b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.5b"
-    shiur:
-      title: "Daf Yomi: Berachot 5b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/5/b/"
   - daf: "6a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.6a"
-    shiur:
-      title: "Daf Yomi: Berachot 6a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/6/a/"
   - daf: "6b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.6b"
-    shiur:
-      title: "Daf Yomi: Berachot 6b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/6/b/"
   - daf: "7a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.7a"
-    shiur:
-      title: "Daf Yomi: Berachot 7a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/7/a/"
   - daf: "7b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.7b"
-    shiur:
-      title: "Daf Yomi: Berachot 7b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/7/b/"
   - daf: "8a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.8a"
-    shiur:
-      title: "Daf Yomi: Berachot 8a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/8/a/"
   - daf: "8b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.8b"
-    shiur:
-      title: "Daf Yomi: Berachot 8b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/8/b/"
   - daf: "9a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.9a"
-    shiur:
-      title: "Daf Yomi: Berachot 9a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/9/a/"
   - daf: "9b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.9b"
-    shiur:
-      title: "Daf Yomi: Berachot 9b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/9/b/"
   - daf: "10a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.10a"
-    shiur:
-      title: "Daf Yomi: Berachot 10a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/10/a/"
   - daf: "10b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.10b"
-    shiur:
-      title: "Daf Yomi: Berachot 10b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/10/b/"
   - daf: "11a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.11a"
-    shiur:
-      title: "Daf Yomi: Berachot 11a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/11/a/"
   - daf: "11b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.11b"
-    shiur:
-      title: "Daf Yomi: Berachot 11b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/11/b/"
   - daf: "12a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.12a"
-    shiur:
-      title: "Daf Yomi: Berachot 12a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/12/a/"
   - daf: "12b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.12b"
-    shiur:
-      title: "Daf Yomi: Berachot 12b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/12/b/"
   - daf: "13a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.13a"
-    shiur:
-      title: "Daf Yomi: Berachot 13a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/13/a/"

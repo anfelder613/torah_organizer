@@ -1,24 +1,16 @@
 masechta: "Berachot"
 title: "Perek 8: Ellu Devarim"
 order: 8
+shiur:
+  title: "Meseches Brachos - Perek 08"
+  url: "https://torahdownloads.com/shiur-23744.html"
+  author: "R' Avrohom Kosman"
 dapim:
   - daf: "52a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.52a"
-    shiur:
-      title: "Daf Yomi: Berachot 52a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/52/a/"
   - daf: "52b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.52b"
-    shiur:
-      title: "Daf Yomi: Berachot 52b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/52/b/"
   - daf: "53a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.53a"
-    shiur:
-      title: "Daf Yomi: Berachot 53a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/53/a/"
   - daf: "53b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.53b"
-    shiur:
-      title: "Daf Yomi: Berachot 53b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/53/b/"
