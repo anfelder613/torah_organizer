@@ -1,0 +1,50 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import Layout from "../../../layouts/Layout.astro";
+import { SECTION_META } from "../../../lib/sections";
+import { CATEGORIES, categorySlugOf, type CategorizedSection, type Category } from "../../../lib/categories";
+
+export async function getStaticPaths() {
+  const paths: { params: { section: CategorizedSection; category: string }; props: { section: CategorizedSection; category: Category } }[] = [];
+  for (const section of Object.keys(CATEGORIES) as CategorizedSection[]) {
+    for (const category of CATEGORIES[section]) {
+      paths.push({ params: { section, category: category.slug }, props: { section, category } });
+    }
+  }
+  return paths;
+}
+
+interface Props {
+  section: CategorizedSection;
+  category: Category;
+}
+
+const { section, category } = Astro.props;
+const meta = SECTION_META[section];
+
+const entries = (await getCollection(section)) as CollectionEntry<typeof section>[];
+const topics = entries
+  .filter((entry) => categorySlugOf(entry.id) === category.slug)
+  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+---
+
+<Layout title={`${category.title} — ${meta.title}`}>
+  <p>
+    <a href={import.meta.env.BASE_URL}>Home</a> /
+    <a href={`${import.meta.env.BASE_URL}${section}/`}>{meta.title}</a>
+  </p>
+  <h1><span aria-hidden="true">{category.emoji}</span> {category.title}</h1>
+  <ul class="topic-list">
+    {
+      topics.map((entry) => (
+        <li>
+          <a href={`${import.meta.env.BASE_URL}${section}/${entry.id}/`}>{entry.data.title}</a>
+          <span class="badge">
+            {entry.data.resources.length} resource{entry.data.resources.length === 1 ? "" : "s"}
+          </span>
+          {entry.data.description && <div class="resource-meta">{entry.data.description}</div>}
+        </li>
+      ))
+    }
+  </ul>
+</Layout>
