@@ -1,49 +1,26 @@
 masechta: "Berachot"
 title: "Perek 4: Tefillat HaShachar"
 order: 4
+shiur:
+  title: "Meseches Brachos - Perek 04"
+  url: "https://torahdownloads.com/shiur-23740.html"
+  author: "R' Avrohom Kosman"
 dapim:
   - daf: "26b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.26b"
-    shiur:
-      title: "Daf Yomi: Berachot 26b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/26/b/"
   - daf: "27a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.27a"
-    shiur:
-      title: "Daf Yomi: Berachot 27a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/27/a/"
   - daf: "27b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.27b"
-    shiur:
-      title: "Daf Yomi: Berachot 27b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/27/b/"
   - daf: "28a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.28a"
-    shiur:
-      title: "Daf Yomi: Berachot 28a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/28/a/"
   - daf: "28b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.28b"
-    shiur:
-      title: "Daf Yomi: Berachot 28b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/28/b/"
   - daf: "29a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.29a"
-    shiur:
-      title: "Daf Yomi: Berachot 29a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/29/a/"
   - daf: "29b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.29b"
-    shiur:
-      title: "Daf Yomi: Berachot 29b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/29/b/"
   - daf: "30a"
     sefariaUrl: "https://www.sefaria.org/Berakhot.30a"
-    shiur:
-      title: "Daf Yomi: Berachot 30a"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/30/a/"
   - daf: "30b"
     sefariaUrl: "https://www.sefaria.org/Berakhot.30b"
-    shiur:
-      title: "Daf Yomi: Berachot 30b"
-      url: "https://www.yutorah.org/daf.cfm/6004/berachot/30/b/"

@@ -15,18 +15,23 @@ const totalDapim = perakim.reduce((sum, p) => sum + p.data.dapim.length, 0);
     <a href={`${import.meta.env.BASE_URL}gemara/`}>Gemara</a>
   </p>
   <h1>Masechet Berachot</h1>
-  <p>{totalDapim} dapim across {perakim.length} perakim. Each daf links to its text on Sefaria and one Daf Yomi shiur.</p>
+  <p>{totalDapim} dapim across {perakim.length} perakim. Each daf links to its text on Sefaria; each perek links to one shiur covering that chapter.</p>
 
   {
     perakim.map((perek) => (
       <section>
         <h2>{perek.data.title}</h2>
+        {perek.data.shiur && (
+          <p class="perek-shiur">
+            Shiur: <a href={perek.data.shiur.url} target="_blank" rel="noopener noreferrer">{perek.data.shiur.title}</a>
+            {perek.data.shiur.author && <> — {perek.data.shiur.author}</>}
+          </p>
+        )}
         <ul class="daf-grid">
           {perek.data.dapim.map((d) => (
             <li>
               <span class="daf-label">{d.daf}</span>
               <a href={d.sefariaUrl} target="_blank" rel="noopener noreferrer">Text (Sefaria)</a>
-              <a href={d.shiur.url} target="_blank" rel="noopener noreferrer">Shiur</a>
             </li>
           ))}
         </ul>
@@ -38,6 +43,10 @@ const totalDapim = perakim.reduce((sum, p) => sum + p.data.dapim.length, 0);
 <style>
   section {
     margin-bottom: 2rem;
+  }
+  .perek-shiur {
+    font-size: 0.9rem;
+    margin: 0.3rem 0 0.75rem;
   }
   ul.daf-grid {
     list-style: none;

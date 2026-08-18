@@ -38,22 +38,27 @@ const parsha = defineCollection({
 });
 
 // Gemara: one file per perek (chapter) of a masechta. Each perek lists its dapim
-// (amudim), each carrying a Sefaria text link and one shiur link — unlike the
-// generic topicSchema above, every daf always has exactly these two resources.
+// (amudim), each carrying a Sefaria text link. The shiur link lives at the perek
+// level, not per-daf: per-daf shiur URL patterns (e.g. YUTorah's daf.cfm) have
+// twice turned out to be dead/retired despite looking real in search results, and
+// a per-daf catalog like AllDaf uses arbitrary numeric IDs with no derivable
+// pattern. One verified shiur per perek is small enough to actually confirm real.
 const dafSchema = z.object({
   daf: z.string(), // e.g. "2a"
   sefariaUrl: z.string().url(),
-  shiur: z.object({
-    title: z.string(),
-    url: z.string().url(),
-    author: z.string().optional(),
-  }),
+});
+
+const shiurSchema = z.object({
+  title: z.string(),
+  url: z.string().url(),
+  author: z.string().optional(),
 });
 
 const perekSchema = z.object({
   masechta: z.string(), // e.g. "Berachot"
   title: z.string(), // e.g. "Perek 1: Me'eimatai"
   order: z.number(), // chapter number within the masechta
+  shiur: shiurSchema.optional(),
   dapim: z.array(dafSchema),
 });
 
