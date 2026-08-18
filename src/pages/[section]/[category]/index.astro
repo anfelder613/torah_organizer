@@ -2,7 +2,7 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 import Layout from "../../../layouts/Layout.astro";
 import { SECTION_META } from "../../../lib/sections";
-import { CATEGORIES, categorySlugOf, type CategorizedSection, type Category } from "../../../lib/categories";
+import { CATEGORIES, CATEGORY_SORT, categorySlugOf, type CategorizedSection, type Category } from "../../../lib/categories";
 
 export async function getStaticPaths() {
   const paths: { params: { section: CategorizedSection; category: string }; props: { section: CategorizedSection; category: Category } }[] = [];
@@ -25,7 +25,11 @@ const meta = SECTION_META[section];
 const entries = (await getCollection(section)) as CollectionEntry<typeof section>[];
 const topics = entries
   .filter((entry) => categorySlugOf(entry.id) === category.slug)
-  .sort((a, b) => a.data.title.localeCompare(b.data.title));
+  .sort((a, b) =>
+    CATEGORY_SORT[section] === "order"
+      ? (a.data.order ?? 0) - (b.data.order ?? 0)
+      : a.data.title.localeCompare(b.data.title)
+  );
 ---
 
 <Layout title={`${category.title} — ${meta.title}`}>
