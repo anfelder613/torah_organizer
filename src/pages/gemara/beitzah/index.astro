@@ -1,0 +1,77 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../../layouts/Layout.astro";
+
+const perakim = (await getCollection("gemara"))
+  .filter((entry) => entry.data.masechta === "Beitzah")
+  .sort((a, b) => a.data.order - b.data.order);
+
+const totalDapim = perakim.reduce((sum, p) => sum + p.data.dapim.length, 0);
+
+// Beitzah doesn't have a verified shiur per perek — instead, one general Daf Yomi
+// series covering the whole masechta is linked once here, rather than repeating the
+// same link identically across all five perek YAML files.
+const generalShiur = {
+  title: "The Quick Daf",
+  url: "https://alldaf.org/series/4066",
+  author: "R' Zecharia Resnik",
+};
+---
+
+<Layout title="Beitzah">
+  <p>
+    <a href={import.meta.env.BASE_URL}>Home</a> /
+    <a href={`${import.meta.env.BASE_URL}gemara/`}>Gemara</a>
+  </p>
+  <h1>Masechet Beitzah</h1>
+  <p>{totalDapim} dapim across {perakim.length} perakim. Each daf links to its text on Sefaria.</p>
+  <p class="perek-shiur">
+    General shiur for this masechta: <a href={generalShiur.url} target="_blank" rel="noopener noreferrer">{generalShiur.title}</a> — {generalShiur.author}
+  </p>
+
+  {
+    perakim.map((perek) => (
+      <section>
+        <h2>{perek.data.title}</h2>
+        <ul class="daf-grid">
+          {perek.data.dapim.map((d) => (
+            <li>
+              <span class="daf-label">{d.daf}</span>
+              <a href={d.sefariaUrl} target="_blank" rel="noopener noreferrer">Text (Sefaria)</a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))
+  }
+</Layout>
+
+<style>
+  section {
+    margin-bottom: 2rem;
+  }
+  .perek-shiur {
+    font-size: 0.9rem;
+    margin: 0.3rem 0 1.5rem;
+  }
+  ul.daf-grid {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 0.5rem;
+  }
+  ul.daf-grid li {
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.5rem 0.7rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.9rem;
+  }
+  .daf-label {
+    font-weight: 600;
+    min-width: 2.5rem;
+  }
+</style>
