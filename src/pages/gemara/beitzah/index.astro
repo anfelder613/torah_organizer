@@ -16,6 +16,13 @@ const generalShiur = {
   url: "https://alldaf.org/series/4066",
   author: "R' Zecharia Resnik",
 };
+
+// Beitzah-specific Daf Hachaim links (see /gemara/resources/ for the general,
+// masechta-agnostic version of this resource).
+const dafHachaim = {
+  main: "https://dafhachaim.org/choose/beitzah",
+  print: "https://alldaf.org/series/4087", // same general flowchart series, linked here for convenience
+};
 ---
 
 <Layout title="Beitzah">
@@ -28,6 +35,21 @@ const generalShiur = {
   <p class="perek-shiur">
     General shiur for this masechta: <a href={generalShiur.url} target="_blank" rel="noopener noreferrer">{generalShiur.title}</a> — {generalShiur.author}
   </p>
+
+  <section>
+    <h2>Daf Hachaim resource</h2>
+    <p>
+      <a href={dafHachaim.main} target="_blank" rel="noopener noreferrer">dafhachaim.org — Beitzah</a>
+      {" "}(intro shiur, full-length shiur, and an 8-minute flowchart review, per daf)
+    </p>
+    <p>
+      Flowchart print version: <a href={dafHachaim.print} target="_blank" rel="noopener noreferrer">Daf Hachaim Review Print Version</a>
+      {" "}(general series, linked here for convenience)
+    </p>
+    <p>
+      <a href={`${import.meta.env.BASE_URL}gemara/resources/`}>See all general Gemara resources &rarr;</a>
+    </p>
+  </section>
 
   {
     perakim.map((perek) => (

@@ -1,0 +1,41 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+
+// General, masechta-agnostic Daf Yomi resources. Not a content collection — this is
+// fixed, hand-curated explanatory content, not an open-ended per-topic resource list.
+const dafHachaim = {
+  main: "https://dafhachaim.org/choose",
+  print: "https://alldaf.org/series/4087",
+};
+---
+
+<Layout title="Gemara Resources">
+  <p>
+    <a href={import.meta.env.BASE_URL}>Home</a> /
+    <a href={`${import.meta.env.BASE_URL}gemara/`}>Gemara</a>
+  </p>
+  <h1>Gemara Resources</h1>
+  <p>General resources for learning any daf — not tied to one masechta.</p>
+
+  <section>
+    <h2>Daf Hachaim</h2>
+    <p>
+      <a href={dafHachaim.main} target="_blank" rel="noopener noreferrer">dafhachaim.org — choose your daf</a>
+    </p>
+    <p>Includes, for each daf:</p>
+    <ul>
+      <li>An intro shiur</li>
+      <li>A full-length shiur (includes the gemara, showing live where the rebbi is on the daf)</li>
+      <li>An 8-minute review with a flowchart</li>
+    </ul>
+    <p>
+      Print version of the flowchart: <a href={dafHachaim.print} target="_blank" rel="noopener noreferrer">Daf Hachaim Review Print Version</a>
+    </p>
+  </section>
+</Layout>
+
+<style>
+  section {
+    margin-bottom: 2rem;
+  }
+</style>
