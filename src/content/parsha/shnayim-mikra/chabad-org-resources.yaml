@@ -1,0 +1,15 @@
+title: "Chabad.org Resources"
+description: >-
+  On chabad.org, click on your parsha ("the parsha" below is a placeholder — use
+  whichever week's parsha you're learning). You'll find several nice resources there;
+  under the "The Parsha Text and Summaries" category, click "The Parsha Torah Reading"
+  for a clean aliyah-by-aliyah Hebrew and English translation.
+resources:
+  - title: "Chabad.org — Parshah"
+    url: "https://www.chabad.org/parshah/"
+    type: article
+    language: mixed
+    description: >-
+      Weekly Torah portion hub. Click your parsha, then under "The Parsha Text and
+      Summaries" open "The Parsha Torah Reading" for the aliyah-by-aliyah Hebrew/English
+      translation.

@@ -1,10 +1,12 @@
 // Category groupings for Halacha, Machshava, and Parsha. Topics in these sections
 // live in subfolders under src/content/<section>/<category-slug>/<topic-slug>.yaml —
 // the category slug (the first path segment of a content collection entry's `id`)
-// is looked up here for display order, title, and emoji. For Parsha the "category"
-// is one of the five Chumashim, and topics within it still sort by the annual-cycle
-// `order` field rather than alphabetically (see sortWithinCategory below). Gemara
-// has its own page structure (masechta/perek/daf), so it doesn't use this module.
+// is looked up here for display order, title, and emoji. For Parsha, most categories
+// are the five Chumashim, plus one extra "Shnayim Mikra" category holding general
+// (non-per-parsha) resources; topics within a Parsha category still sort by the
+// annual-cycle `order` field rather than alphabetically (see sortWithinCategory
+// below) — irrelevant for Shnayim Mikra since it holds a single topic. Gemara has
+// its own page structure (masechta/perek/daf), so it doesn't use this module.
 
 export type CategorizedSection = "halacha" | "machshava" | "parsha";
 
@@ -37,6 +39,7 @@ export const CATEGORIES: Record<CategorizedSection, Category[]> = {
     { slug: "vayikra", title: "Vayikra", emoji: "🕯️" },
     { slug: "bamidbar", title: "Bamidbar", emoji: "🏜️" },
     { slug: "devarim", title: "Devarim", emoji: "📜" },
+    { slug: "shnayim-mikra", title: "Shnayim Mikra", emoji: "📚" },
   ],
 };
 
