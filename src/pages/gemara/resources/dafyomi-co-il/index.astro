@@ -1,0 +1,26 @@
+---
+import Layout from "../../../../layouts/Layout.astro";
+
+const dafyomiCoIl = {
+  main: "https://dafyomi.co.il/",
+};
+---
+
+<Layout title="Dafyomi.co.il">
+  <p>
+    <a href={import.meta.env.BASE_URL}>Home</a> /
+    <a href={`${import.meta.env.BASE_URL}gemara/`}>Gemara</a> /
+    <a href={`${import.meta.env.BASE_URL}gemara/resources/`}>Resources</a>
+  </p>
+  <h1>Dafyomi.co.il (Kollel Iyun Hadaf)</h1>
+  <p>
+    <a href={dafyomiCoIl.main} target="_blank" rel="noopener noreferrer">dafyomi.co.il — Dafyomi Advancement Forum</a>
+  </p>
+  <p>
+    A huge, long-running study-material site organized per masechta. The <strong>Point by
+    Point Summary</strong> is a gem — a clear, step-by-step walkthrough of the whole daf.
+    Its <strong>Point by Point Summary of Tosfos</strong> is also good, for masechtot that
+    have it. Also includes Insights to the Daf, Background to the Daf, Daf Review Q&amp;A,
+    Halachah Outlines, and more.
+  </p>
+</Layout>

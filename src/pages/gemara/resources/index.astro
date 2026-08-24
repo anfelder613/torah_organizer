@@ -1,16 +1,14 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
 
-// General, masechta-agnostic Daf Yomi resources. Not a content collection — this is
-// fixed, hand-curated explanatory content, not an open-ended per-topic resource list.
-const dafHachaim = {
-  main: "https://dafhachaim.org/choose",
-  print: "https://alldaf.org/series/4087",
-};
-
-const dafyomiCoIl = {
-  main: "https://dafyomi.co.il/",
-};
+// General, masechta-agnostic Daf Yomi resources. Each one gets its own subpage
+// (same pattern as the Gemara index linking out to each masechta's subpage) —
+// listed here, not a content collection, since this is a short, fixed, hand-curated
+// list rather than an open-ended per-topic resource list.
+const resources = [
+  { slug: "daf-hachaim", title: "Daf Hachaim", description: "Intro shiur, full-length shiur, and an 8-minute flowchart review — for any daf." },
+  { slug: "dafyomi-co-il", title: "Dafyomi.co.il (Kollel Iyun Hadaf)", description: "Point by Point Summary of the daf (a gem), plus Tosfos summaries, insights, background, and more." },
+];
 ---
 
 <Layout title="Gemara Resources">
@@ -20,40 +18,14 @@ const dafyomiCoIl = {
   </p>
   <h1>Gemara Resources</h1>
   <p>General resources for learning any daf — not tied to one masechta.</p>
-
-  <section>
-    <h2>Daf Hachaim</h2>
-    <p>
-      <a href={dafHachaim.main} target="_blank" rel="noopener noreferrer">dafhachaim.org — choose your daf</a>
-    </p>
-    <p>Includes, for each daf:</p>
-    <ul>
-      <li>An intro shiur</li>
-      <li>A full-length shiur (includes the gemara, showing live where the rebbi is on the daf)</li>
-      <li>An 8-minute review with a flowchart</li>
-    </ul>
-    <p>
-      Print version of the flowchart: <a href={dafHachaim.print} target="_blank" rel="noopener noreferrer">Daf Hachaim Review Print Version</a>
-    </p>
-  </section>
-
-  <section>
-    <h2>Dafyomi.co.il (Kollel Iyun Hadaf)</h2>
-    <p>
-      <a href={dafyomiCoIl.main} target="_blank" rel="noopener noreferrer">dafyomi.co.il — Dafyomi Advancement Forum</a>
-    </p>
-    <p>
-      A huge, long-running study-material site organized per masechta. The <strong>Point by
-      Point Summary</strong> is a gem — a clear, step-by-step walkthrough of the whole daf.
-      Its <strong>Point by Point Summary of Tosfos</strong> is also good, for masechtot that
-      have it. Also includes Insights to the Daf, Background to the Daf, Daf Review Q&amp;A,
-      Halachah Outlines, and more.
-    </p>
-  </section>
+  <ul class="topic-list">
+    {
+      resources.map((r) => (
+        <li>
+          <a href={`${import.meta.env.BASE_URL}gemara/resources/${r.slug}/`}>{r.title}</a>
+          <div class="resource-meta">{r.description}</div>
+        </li>
+      ))
+    }
+  </ul>
 </Layout>
-
-<style>
-  section {
-    margin-bottom: 2rem;
-  }
-</style>
