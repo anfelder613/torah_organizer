@@ -51,6 +51,12 @@ const dafHachaim = {
     </p>
   </section>
 
+  <p class="hint">
+    Also see <a href="https://dafyomi.co.il/beitzah/" target="_blank" rel="noopener noreferrer">Dafyomi.co.il — Beitzah</a>
+    (point-by-point summaries, Tosfos summaries, and more) — if you want to see more resources
+    like this, go to the <a href={`${import.meta.env.BASE_URL}gemara/resources/`}>Resources</a> tab.
+  </p>
+
   {
     perakim.map((perek) => (
       <section>
@@ -75,6 +81,11 @@ const dafHachaim = {
   .perek-shiur {
     font-size: 0.9rem;
     margin: 0.3rem 0 1.5rem;
+  }
+  .hint {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin: -0.5rem 0 1.5rem;
   }
   ul.daf-grid {
     list-style: none;
