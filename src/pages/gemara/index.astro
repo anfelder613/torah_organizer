@@ -1,34 +1,25 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 
-// Add more masechtot here as they're populated.
-const masechtot = [
-  { slug: "berachot", title: "Berachot", description: "Blessings — the first tractate of Seder Zeraim." },
-  { slug: "beitzah", title: "Beitzah", description: "Yom Tov laws — the third tractate of Seder Moed." },
+const folders = [
+  { slug: "mesechtos", title: "Gemara Mesechtos", emoji: "📖", description: "Browse by masechta (tractate), then by daf." },
+  { slug: "resources", title: "Gemara Resources", emoji: "🧰", description: "General daf-learning resources that aren't tied to one masechta." },
 ];
 ---
 
 <Layout title="Gemara">
   <p><a href={import.meta.env.BASE_URL}>&larr; Home</a></p>
   <h1>Gemara</h1>
-  <p>Browse by masechta (tractate), then by daf — each daf links to its text on Sefaria and one shiur.</p>
   <ul class="topic-list">
     {
-      masechtot.map((m) => (
+      folders.map((f) => (
         <li>
-          <a href={`${import.meta.env.BASE_URL}gemara/${m.slug}/`}>{m.title}</a>
-          <div class="resource-meta">{m.description}</div>
+          <a href={`${import.meta.env.BASE_URL}gemara/${f.slug}/`}>
+            <span aria-hidden="true">{f.emoji}</span> {f.title}
+          </a>
+          <div class="resource-meta">{f.description}</div>
         </li>
       ))
     }
-  </ul>
-
-  <h2>Resources</h2>
-  <p>General daf-learning resources that aren't tied to one masechta.</p>
-  <ul class="topic-list">
-    <li>
-      <a href={`${import.meta.env.BASE_URL}gemara/resources/`}>Daf Hachaim</a>
-      <div class="resource-meta">Intro shiur, full-length shiur, and an 8-minute flowchart review — for any daf.</div>
-    </li>
   </ul>
 </Layout>

@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import Layout from "../../../layouts/Layout.astro";
+import Layout from "../../../../layouts/Layout.astro";
 
 const perakim = (await getCollection("gemara"))
   .filter((entry) => entry.data.masechta === "Berachot")
@@ -12,7 +12,8 @@ const totalDapim = perakim.reduce((sum, p) => sum + p.data.dapim.length, 0);
 <Layout title="Berachot">
   <p>
     <a href={import.meta.env.BASE_URL}>Home</a> /
-    <a href={`${import.meta.env.BASE_URL}gemara/`}>Gemara</a>
+    <a href={`${import.meta.env.BASE_URL}gemara/`}>Gemara</a> /
+    <a href={`${import.meta.env.BASE_URL}gemara/mesechtos/`}>Gemara Mesechtos</a>
   </p>
   <h1>Masechet Berachot</h1>
   <p>{totalDapim} dapim across {perakim.length} perakim. Each daf links to its text on Sefaria; each perek links to one shiur covering that chapter.</p>

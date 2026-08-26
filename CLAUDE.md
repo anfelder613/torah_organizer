@@ -121,8 +121,12 @@ two perek files.
 Add a new masechta by: creating a new subfolder, verifying its Sefaria name and YUTorah
 masechta ID, generating its perek files (a script, not one Write call per daf — see how
 Berachot was generated), and adding it to the `masechtot` array in
-`src/pages/gemara/index.astro` plus a new `src/pages/gemara/<masechta>/index.astro` page
-(copy `berachot/index.astro` and change the collection filter).
+`src/pages/gemara/mesechtos/index.astro` plus a new
+`src/pages/gemara/mesechtos/<masechta>/index.astro` page (copy `berachot/index.astro` and
+change the collection filter). `src/pages/gemara/index.astro` itself is just a two-item
+splash linking to `gemara/mesechtos/` (the masechta list) and `gemara/resources/`
+(general, masechta-agnostic resources like Daf Hachaim and Dafyomi.co.il) — it doesn't
+need touching when adding a masechta.
 
 ## Adding content (the main day-to-day workflow)
 

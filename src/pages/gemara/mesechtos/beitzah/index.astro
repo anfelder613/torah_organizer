@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import Layout from "../../../layouts/Layout.astro";
+import Layout from "../../../../layouts/Layout.astro";
 
 const perakim = (await getCollection("gemara"))
   .filter((entry) => entry.data.masechta === "Beitzah")
@@ -28,7 +28,8 @@ const dafHachaim = {
 <Layout title="Beitzah">
   <p>
     <a href={import.meta.env.BASE_URL}>Home</a> /
-    <a href={`${import.meta.env.BASE_URL}gemara/`}>Gemara</a>
+    <a href={`${import.meta.env.BASE_URL}gemara/`}>Gemara</a> /
+    <a href={`${import.meta.env.BASE_URL}gemara/mesechtos/`}>Gemara Mesechtos</a>
   </p>
   <h1>Masechet Beitzah</h1>
   <p>{totalDapim} dapim across {perakim.length} perakim. Each daf links to its text on Sefaria.</p>
