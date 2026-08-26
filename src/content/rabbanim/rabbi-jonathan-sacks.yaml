@@ -1,0 +1,56 @@
+title: "Rabbi Jonathan Sacks"
+description: "Divrei Torah from Rabbi Lord Jonathan Sacks, Covenant & Conversation — his weekly Torah commentary."
+resources:
+  - title: "An Introduction to the Book of Genesis"
+    url: "https://rabbisacks.org/covenant-conversation/bereishit-genesis/an-introduction-to-genesis/"
+    type: article
+    author: "Rabbi Lord Jonathan Sacks"
+    language: english
+  - title: "An Introduction to the Book of Exodus"
+    url: "https://rabbisacks.org/covenant-conversation/shemot-exodus/an-introduction-to-exodus/"
+    type: article
+    author: "Rabbi Lord Jonathan Sacks"
+    language: english
+  - title: "An Introduction to the Book of Leviticus"
+    url: "https://rabbisacks.org/covenant-conversation/vayikra-leviticus/an-introduction-to-leviticus/"
+    type: article
+    author: "Rabbi Lord Jonathan Sacks"
+    language: english
+  - title: "An Introduction to the Book of Numbers"
+    url: "https://rabbisacks.org/covenant-conversation/bamidbar-numbers/an-introduction-to-numbers/"
+    type: article
+    author: "Rabbi Lord Jonathan Sacks"
+    language: english
+  - title: "An Introduction to the Book of Deuteronomy"
+    url: "https://rabbisacks.org/covenant-conversation/devarim-deuteronomy/an-introduction-to-deuteronomy/"
+    type: article
+    author: "Rabbi Lord Jonathan Sacks"
+    language: english
+  - title: "Essays on Ethics Series"
+    url: "https://rabbisacks.org/covenant-conversation/essays-on-ethics/"
+    type: article
+    author: "Rabbi Lord Jonathan Sacks"
+    language: english
+    description: "A parsha-by-parsha series on ethics and morality."
+  - title: "Studies in Spirituality Series"
+    url: "https://rabbisacks.org/covenant-conversation/studies-in-spirituality/"
+    type: article
+    author: "Rabbi Lord Jonathan Sacks"
+    language: english
+    description: "A parsha-by-parsha series exploring spirituality."
+  - title: "I Believe Series"
+    url: "https://rabbisacks.org/covenant-conversation/i-believe/"
+    type: article
+    author: "Rabbi Lord Jonathan Sacks"
+    language: english
+    description: "A parsha-by-parsha series of essays on faith, each with a statement of belief."
+  - title: "Lessons in Leadership Series"
+    url: "https://rabbisacks.org/covenant-conversation/lessons-in-leadership/"
+    type: article
+    author: "Rabbi Lord Jonathan Sacks"
+    language: english
+  - title: "Life-Changing Ideas Series"
+    url: "https://rabbisacks.org/covenant-conversation/life-changing-ideas/"
+    type: article
+    author: "Rabbi Lord Jonathan Sacks"
+    language: english
