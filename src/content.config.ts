@@ -37,6 +37,14 @@ const parsha = defineCollection({
   schema: topicSchema,
 });
 
+// One file per rabbi, each holding a resources list (divrei torah, shiurim, articles).
+// Uncategorized — unlike Halacha/Machshava/Parsha, there's no grouping layer above the
+// individual rabbi, so this doesn't appear in src/lib/categories.ts.
+const rabbanim = defineCollection({
+  loader: glob({ pattern: "**/*.yaml", base: "./src/content/rabbanim" }),
+  schema: topicSchema,
+});
+
 // Gemara: one file per perek (chapter) of a masechta. Each perek lists its dapim
 // (amudim), each carrying a Sefaria text link. The shiur link lives at the perek
 // level, not per-daf: per-daf shiur URL patterns (e.g. YUTorah's daf.cfm) have
@@ -67,4 +75,4 @@ const gemara = defineCollection({
   schema: perekSchema,
 });
 
-export const collections = { halacha, machshava, parsha, gemara };
+export const collections = { halacha, machshava, parsha, gemara, rabbanim };
