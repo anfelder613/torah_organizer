@@ -24,6 +24,7 @@ export const CATEGORIES: Record<CategorizedSection, Category[]> = {
     { slug: "good-evil-suffering-justice", title: "Good, Evil, Suffering & Justice", emoji: "⚖️" },
     { slug: "am-yisrael-exile-redemption", title: "Am Yisrael, Exile & Redemption", emoji: "🇮🇱" },
     { slug: "prophecy-afterlife-ultimate-reality", title: "Prophecy, Afterlife & Ultimate Reality", emoji: "🔮" },
+    { slug: "moadim", title: "Moadim", emoji: "📅" },
   ],
   halacha: [
     { slug: "shabbat-moadim", title: "Shabbat & Moadim", emoji: "🕯️" },
