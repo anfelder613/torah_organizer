@@ -1,0 +1,54 @@
+title: "Halachipedia"
+description: >-
+  A collaborative, wiki-style (MediaWiki) encyclopedia of practical halacha,
+  covering daily life, lifecycle events, and the Yamim Tovim. Articles are
+  organized both by everyday topic (Shabbat, Kashrut, Tefillah, etc.) and by
+  the three classic relationships — Bein Adam LaMakom, Bein Adam L'Atzmo, and
+  Bein Adam LaChaveiro. All content is required to be sourced (Talmud through
+  modern poskim and responsa), and unsourced material is removed on sight —
+  but only articles published through Yeshiva University have been formally
+  reviewed by a rabbi (Rabbi Mordechai Willig); most other entries have not.
+  Best used as a well-sourced starting point and index into the primary
+  sources on a topic, not as a psak — the site itself frames it as a
+  reference tool, presents machlokesim neutrally rather than ruling between
+  them, and says to ask your own Orthodox rabbi for anything practical or
+  situation-specific.
+resources:
+  - title: "Halachipedia — Main Page"
+    url: "https://halachipedia.com/"
+    type: article
+    description: "The site's homepage and index — browse all topics from here."
+  - title: "Halachipedia:About"
+    url: "https://halachipedia.com/index.php?title=Halachipedia%3AAbout"
+    type: article
+    description: "The site's own explanation of its purpose, sourcing standards, and how it's meant to be used."
+  - title: "Morning Routine"
+    url: "https://halachipedia.com/index.php?title=Morning_Routine"
+    type: article
+  - title: "Prayer"
+    url: "https://halachipedia.com/index.php?title=Prayer"
+    type: article
+  - title: "Brachot"
+    url: "https://halachipedia.com/index.php?title=Brachot"
+    type: article
+  - title: "Learning Torah"
+    url: "https://halachipedia.com/index.php?title=Learning_Torah"
+    type: article
+  - title: "Shabbat"
+    url: "https://halachipedia.com/index.php?title=Shabbat"
+    type: article
+  - title: "Holidays"
+    url: "https://halachipedia.com/index.php?title=Holidays"
+    type: article
+  - title: "Lifecycles"
+    url: "https://halachipedia.com/index.php?title=Lifecycles"
+    type: article
+  - title: "Kashrut"
+    url: "https://halachipedia.com/index.php?title=Kashrut"
+    type: article
+  - title: "Women"
+    url: "https://halachipedia.com/index.php?title=Women"
+    type: article
+  - title: "Contemporary Issues"
+    url: "https://halachipedia.com/index.php?title=Contemporary_Issues"
+    type: article

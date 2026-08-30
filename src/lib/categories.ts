@@ -33,6 +33,7 @@ export const CATEGORIES: Record<CategorizedSection, Category[]> = {
     { slug: "kashrut", title: "Kashrut", emoji: "🍽️" },
     { slug: "family-lifecycle", title: "Family & Lifecycle", emoji: "👨‍👩‍👧" },
     { slug: "bein-adam-lachaveiro", title: "Bein Adam LaChaveiro", emoji: "⚖️" },
+    { slug: "halachipedia", title: "Halachipedia", emoji: "📚" },
   ],
   parsha: [
     { slug: "bereishit", title: "Bereishit", emoji: "🌍" },
