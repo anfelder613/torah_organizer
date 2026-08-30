@@ -1,0 +1,30 @@
+title: "Rabbi David Fohrman"
+description: "Founder and lead scholar of Aleph Beta — close-reading, narrative-driven Torah videos and podcasts on parsha and the Yamim Noraim."
+resources:
+  - title: "Parsha Explanations, Meanings, and Dvar Torah"
+    url: "https://www.alephbeta.org/library/topics/parsha"
+    type: shiur
+    author: "Rabbi David Fohrman"
+    format: video
+    description: "Aleph Beta's full library of parsha content, organized by topic."
+  - title: "Holiday Explanations, Meanings, and Dvar Torah"
+    url: "https://www.alephbeta.org/library/topics/holidays"
+    type: shiur
+    author: "Rabbi David Fohrman"
+    format: video
+    description: "Aleph Beta's full library of Yom Tov content, organized by holiday."
+  - title: "Rosh Hashanah: Videos, Meaning & Preparation"
+    url: "https://www.alephbeta.org/holiday/rosh-hashanah"
+    type: shiur
+    author: "Rabbi David Fohrman"
+    format: video
+  - title: "Rosh Hashanah Preparation"
+    url: "https://alephbeta.org/playlist/prepare-for-rosh-hashanah"
+    type: shiur
+    author: "Rabbi David Fohrman"
+    format: video
+  - title: "The Parsha Experiment — Bereishit: Is the Torah One Big Story?"
+    url: "https://www.alephbeta.org/playlist/parshat-bereishit-story"
+    type: shiur
+    author: "Rabbi David Fohrman"
+    format: video
