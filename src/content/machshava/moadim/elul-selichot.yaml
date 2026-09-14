@@ -1,4 +1,4 @@
-title: "Elul & Selichot"
+title: "Elul, Selichot & Teshuvah"
 description: "The month of Elul, teshuva preparation, and the recitation of Selichot leading into Rosh Hashanah."
 resources:
   - title: "Selichot - Machnisei Rachamim"
@@ -18,3 +18,22 @@ resources:
   - title: "Shivti B'Veit Hashem - How to Prepare in Chodesh Elul"
     url: "https://www.yutorah.org/lectures/862246"
     type: shiur
+  - title: "The City Of Refuge And Elul"
+    url: "https://www.yutorah.org/lectures/825964"
+    type: shiur
+    author: "Rabbi Ari Zahtz"
+  - title: "Shiurim from Rabbi Beni Krohn"
+    url: "https://outorah.org/authors/43/"
+    type: shiur
+    author: "Rabbi Beni Krohn"
+    description: "Full OU Torah shiur archive — his Yamim Noraim/teshuva content is mixed in among his Daf Hashavua and parsha shiurim."
+  - title: "Shiurim by Rabbi Jonah Steinmetz"
+    url: "https://www.yutorah.org/teachers/rabbi-jonah-steinmetz/"
+    type: shiur
+    author: "Rabbi Jonah Steinmetz"
+    description: "Full YUTorah shiur archive — browse for his Elul/teshuva-season shiurim."
+  - title: "Shiurim by Rabbi Elisha Bacon"
+    url: "https://www.yutorah.org/teachers/rabbi-elisha-bacon"
+    type: shiur
+    author: "Rabbi Elisha Bacon"
+    description: "Full YUTorah shiur archive — browse for his Elul/teshuva-season shiurim."
