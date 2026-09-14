@@ -1,5 +1,10 @@
 title: "Elul, Selichot & Teshuvah"
-description: "The month of Elul, teshuva preparation, and the recitation of Selichot leading into Rosh Hashanah."
+description: >-
+  The month of Elul, teshuva preparation, and the recitation of Selichot
+  leading into Rosh Hashanah. Note: for Rabbi Ari Zahtz, Rabbi Beni Krohn,
+  Rabbi Jonah Steinmetz, and Rabbi Elisha Bacon, we haven't yet verified that
+  they have an Elul/Selichot/teshuva-specific shiur — the links below go to
+  each rabbi's full shiur archive rather than a confirmed on-topic talk.
 resources:
   - title: "Selichot - Machnisei Rachamim"
     url: "https://outorah.org/p/169730/"
@@ -18,22 +23,23 @@ resources:
   - title: "Shivti B'Veit Hashem - How to Prepare in Chodesh Elul"
     url: "https://www.yutorah.org/lectures/862246"
     type: shiur
-  - title: "The City Of Refuge And Elul"
-    url: "https://www.yutorah.org/lectures/825964"
+  - title: "Shiurim by Rabbi Ari Zahtz"
+    url: "https://www.yutorah.org/teachers/rabbi-ari-zahtz"
     type: shiur
     author: "Rabbi Ari Zahtz"
+    description: "Full YUTorah shiur archive — not yet verified to include an Elul/teshuva-specific shiur."
   - title: "Shiurim from Rabbi Beni Krohn"
     url: "https://outorah.org/authors/43/"
     type: shiur
     author: "Rabbi Beni Krohn"
-    description: "Full OU Torah shiur archive — his Yamim Noraim/teshuva content is mixed in among his Daf Hashavua and parsha shiurim."
+    description: "Full OU Torah shiur archive — not yet verified to include an Elul/teshuva-specific shiur."
   - title: "Shiurim by Rabbi Jonah Steinmetz"
     url: "https://www.yutorah.org/teachers/rabbi-jonah-steinmetz/"
     type: shiur
     author: "Rabbi Jonah Steinmetz"
-    description: "Full YUTorah shiur archive — browse for his Elul/teshuva-season shiurim."
+    description: "Full YUTorah shiur archive — not yet verified to include an Elul/teshuva-specific shiur."
   - title: "Shiurim by Rabbi Elisha Bacon"
     url: "https://www.yutorah.org/teachers/rabbi-elisha-bacon"
     type: shiur
     author: "Rabbi Elisha Bacon"
-    description: "Full YUTorah shiur archive — browse for his Elul/teshuva-season shiurim."
+    description: "Full YUTorah shiur archive — not yet verified to include an Elul/teshuva-specific shiur."
