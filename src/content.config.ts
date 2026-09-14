@@ -75,4 +75,11 @@ const gemara = defineCollection({
   schema: perekSchema,
 });
 
-export const collections = { halacha, machshava, parsha, gemara, rabbanim };
+// One file per doc/item, uncategorized (like rabbanim) for now — this section is
+// still being shaped; see src/lib/sections.ts for a note on its current state.
+const googleDocs = defineCollection({
+  loader: glob({ pattern: "**/*.yaml", base: "./src/content/google-docs" }),
+  schema: topicSchema,
+});
+
+export const collections = { halacha, machshava, parsha, gemara, rabbanim, "google-docs": googleDocs };
