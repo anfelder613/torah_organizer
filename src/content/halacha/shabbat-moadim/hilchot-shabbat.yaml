@@ -12,3 +12,7 @@ resources:
     url: "https://torahdownloads.com/shiur-1010338.html"
     type: shiur
     author: "Rabbi Moshe Walter"
+  - title: "Machshava/Jewish Thought — Shabbat"
+    url: "https://www.yutorah.org/machshava/jewish-thought/shabbat"
+    type: shiur
+    description: "YUTorah's topic index of Jewish-thought shiurim on the meaning of Shabbos."
